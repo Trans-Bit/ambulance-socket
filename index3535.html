@@ -16,7 +16,6 @@
           console.log("User has connected!");
           socket.on("ambulance", data => {
             console.log("calling");
-            $("#messages").innerHTML = data;
             alert(data);
             console.log("received message");
           });
@@ -26,9 +25,6 @@
         });
       });
     </script>
-    <h1 id="messages">
-      No requests
-    </h1>
     <button id="sendbutton">Send Ambulance</button>
   </body>
 </html>
